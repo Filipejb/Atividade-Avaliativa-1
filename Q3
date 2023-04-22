@@ -4,7 +4,7 @@ int main(){
  float ar, vol, ra, pi = 3.14159;
 
   printf("Digite o valor do raio:");
-  scanf("%d", &ra);
+  scanf("%f", &ra);
 
   ar = 4 * pi * ra * ra;
   vol = (4/3.0) * pi * ra * ra * ra;
