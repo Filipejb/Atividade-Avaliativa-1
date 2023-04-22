@@ -1,0 +1,46 @@
+#include <stdio.h>
+
+int main(){
+   int op, quant;
+   float vt = 0;
+   
+     while(1){
+        printf("MENU:\n");
+        printf("1 => ABACAXI – R$5 a unidade\n");
+        printf("2 => MAÇA – R$1 a unidade\n");
+        printf("3 => PERA – R$4 a unidade\n");
+        printf("4 => FINALIZAR \n");
+        printf("Escolha uma opção: ");
+        scanf("%d", &op);
+
+       if(op == 4){
+         break;
+       }
+
+        switch(op){
+          case 1:
+                printf("Digite a quantidade de abacaxis desejada: ");
+                scanf("%d", &quant);
+                vt = vt + quant * 5;
+                break;
+          case 2:
+                printf("Digite a quantidade de maças desejada: ");
+                scanf("%d", &quant);
+                vt = vt + quant * 1;
+                break;
+          case 3:
+                printf("Digite a quantidade de peras desejada: ");
+                scanf("%d", &quant);
+                vt = vt + quant * 4;
+                break;
+          default:
+                  printf("Opção inválida!\n");
+                
+        }
+
+       printf("Valor total da compra: R$%.2f\n", vt);
+     } 
+    
+      
+  return 0;
+}
