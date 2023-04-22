@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main(){
+   int num, ma, me;
+
+    printf("Digite um número positivo : ");
+    scanf("%d", &num);
+
+  ma = me = num;
+
+  while(num >= 0){
+    if(num > ma){
+      ma = num;
+    }else if (num < me){
+      me = num;
+    }
+     printf("Digite outro número positivo para continuar ou um numero negativo para sair: ");
+        scanf("%d", &num);
+  }
+  printf("O maior número foi %d e o menor foi %d\n", ma, me);
+  return 0;
+}
