@@ -10,7 +10,7 @@ int main(){
 
     dis = sqrt(pow(x2-x1,2)+pow(y2-y1,2));
 
-    printf("%.4lf\n", dis);
+    printf("A distancia e:%.4lf\n", dis);
   
     return 0;
 }
