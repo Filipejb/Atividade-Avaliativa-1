@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main() {
+
+  int num, i, soma = 0;
+  float med;
+
+  printf("Digite 10 numeros inteiros:");
+  
+  for(i = 0; i < 10; i++) {
+    scanf("%d", &num);
+    soma = soma + num;
+  }
+
+  med = (float)soma/10;
+
+   printf("A media e: %.2f", med);
+
+
+  return 0;
+}
