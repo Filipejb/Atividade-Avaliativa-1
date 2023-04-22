@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+#include <stdio.h>
+
+int main() {
+    int so = 0, i;
+      
+      for(i = 1;i < 1000; i++){
+        if (i % 3==0 || i % 5==0){
+          so = so + i;
+          
+        }
+      }
+
+       printf("a soma dos numeros mulriplos de 3 e 5 é:%d", so);
+  return 0;
+}
